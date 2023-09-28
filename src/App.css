@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  padding-left: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav li {
+  float: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav li a {
+  display: block;
   color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+nav li a:hover {
+  background-color: #C2B506;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active {
+  background-color: #C2B506;
+}
+
+/* Custom styles for the card layout */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.card .title {
+  font-weight: bold;
+  color: #333;
+}
+
+.card button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 70px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card button:hover {
+  background-color: grey;
+}
+
+/* Optional: Add some spacing around the container */
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: rgb(211, 211, 0);
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
