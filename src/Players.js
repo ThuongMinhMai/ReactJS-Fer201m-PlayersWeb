@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { Players } from './shared/ListOfPlayers';
 export default function Player() {
     return (
