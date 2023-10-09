@@ -1,21 +1,34 @@
 import React, { Component, useState } from "react";
-import { Players } from './shared/ListOfPlayers';
+import { data } from './shared/ListOfPlayers';
+import { Link } from 'react-router-dom'
 export default function Player() {
+    const [player, setplayer] = useState({});
     return (
       <div className="container">
-        {Players.map((player)=>(
-          <div className="column"key={player.id}>
-          <div className="card">
-            <img src={player.img} />
-            <h3>{player.name}</h3>
-            <p className="title">{player.club}</p>
-            <p><button>Detail</button></p>
-          </div>
+            {data.map((player)=>(
+                <div className="column">
+                    <div className="card">
+                        <img src={player.img} alt=""/>
+                        <h3>{player.name}</h3>
+                        <p className="title">{player.club}</p>
+                        <Link to={`detail/${player.id}`}> 
+                        <p><button onClick={()=>setplayer(player)}><a href="#popup1" id="openPopUp">Detail</a></button></p>
+                        </Link>
+                    </div>
+                </div>
+            ))}
+            <div id="popup1" className="overlay">
+                <div className="popup">
+                    <img src={player.img}/>
+                    <h2>{player.name}</h2>
+                    <a className="close" href="#">&times;</a>
+                    <div className="content">
+                        {player.info}
+                    </div>
+                </div>
+            </div>
         </div>
-        ))}
-        
-      </div>
-
+)
       // <div className="container-fluid">
       //   <div className="row">
       //     <div className="col-sm-4">
@@ -81,5 +94,4 @@ export default function Player() {
       //     </div>
       //   </div>
       // </div>
-    );
   }
