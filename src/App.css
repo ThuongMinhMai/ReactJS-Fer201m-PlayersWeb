@@ -1,3 +1,4 @@
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -79,7 +80,6 @@ nav li a:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  position: relative;
 }
 .overlay {
   position: fixed;
@@ -153,14 +153,19 @@ nav li a:hover {
 }
 
 .badge {
+  display: flex;
+  justify-items: center;
+  align-items: center;
   background-color: #ff5722;
   color: #fff;
   font-weight: bold;
   position: absolute;
   width: 200px;
-  height: 30px;
+  height: 40px;
 }
-
+.name{
+  font-size: 20px;
+}
 .product-tumb img {
   max-width: 100%;
   height: auto;
@@ -184,5 +189,17 @@ h4 {
 p {
   margin-top: 10px;
   line-height: 1.5;
+}
+
+.icon{
+  display: flex;
+  align-items: center;
+}
+.menu{
+  background: #003f9c;
+}
+
+.hinh{
+  width: 500px;
 }
 

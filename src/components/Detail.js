@@ -9,7 +9,7 @@ const userName = useParams();
    return(
     <div className='container'>
      <div className='product-card'>
-    	<div className='badge'><h5>{player.name}</h5></div>
+    	<div className='badge'><span className='name'>{player.name}</span></div>
     	<div className='product-tumb'>
     		<img src={`../${player.img}`} alt=''/>
     	</div>
