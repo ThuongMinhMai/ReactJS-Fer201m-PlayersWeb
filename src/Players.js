@@ -23,14 +23,14 @@ export default function Player() {
                 <Link to={`detail/${player.id}`}>Detail</Link>
               </p>
             </div>
-            <div className="card-reveal">
+            {/* <div className="card-reveal">
               <span className="card-title grey-text text-darken-4">
                 {player.name}<Icon className="right">close</Icon>
               </span>
               <p>
                 Here is some more information about {player.name} that is only revealed once clicked on.
               </p>
-            </div>
+            </div> */}
           </Card>
         </div>
       ))}
