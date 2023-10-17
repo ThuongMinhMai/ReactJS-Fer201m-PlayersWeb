@@ -17,7 +17,7 @@ export default function Detail() {
           <span className="name">{player.name}</span>
         </div>
         <div className="product-tumb">
-          <img src={`../${player.img}`} alt="" />
+          <img src={`../${player.img}`} />
         </div>
         <div className="product-details">
           <a

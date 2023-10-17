@@ -9,7 +9,7 @@ export default function PlayersPresentation({ players }) {
             {players.map((player)=>(
                 <div className="column">
                     <div className="card">
-                        <img src={player.img} alt=""/>
+                        <img src={player.img} />
                         <h3>{player.name}</h3>
                         <p className="title">{player.club}</p>
                         <p><button onClick={()=>setplayer(player)}><a href="#popup1" id="openPopUp">Detail</a></button></p>
